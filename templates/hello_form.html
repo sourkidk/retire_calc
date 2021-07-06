@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Fill out this form to find out how much to save for retirement</h1>
+
+  <form action="/hello" method="POST">
+    Your Name: <input type="text" name="name">
+    <br/>
+    What is your current age?: <input type="text" name="current_age">
+    <br/>
+    At what age would you like to retire?: <input type="text" name="retirement_age">
+    <br/>
+    How much do you have saved currently?: <input type="text" name="current_savings">
+    <br/>
+    What is your expected return rate?: <input type="text" name="return_rate">
+    <br/>
+    What is your current income?: <input type="text" name="income">
+    <br/>
+    If you retired tomorrow, how much per month would you need to live on?: <input type="text" name="monthly_need">
+    <input type="submit">
+  </form>
+
+
+{% endblock %}
